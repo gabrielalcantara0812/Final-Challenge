@@ -7,30 +7,31 @@ const Header = () => {
 
     const Mobile = () => {
         return(
-            <nav>
-                <ul>
+            <S.NavigationMobile>
+                <S.ContainerMobile>
                     <li><S.LINK to='/'>HOME</S.LINK></li>
                     <li><S.LINK to='/about'>ABOUT</S.LINK></li>
                     <li><S.LINK to='/works'>WORKS</S.LINK></li>
                     <li><S.LINK to='/onu'>ONU</S.LINK></li>
-                </ul>
-            </nav>
+                </S.ContainerMobile>
+            </S.NavigationMobile>
         )
     }
 
     return(
-        <>
-            <nav>
+        <S.MomContainer>
+            <S.Heading>Gabriel Alcântara</S.Heading>
+            <S.Navigation>
                 <S.Container>
                     <S.LinkContainer><S.LINK to='/'>HOME</S.LINK></S.LinkContainer>
                     <S.LinkContainer><S.LINK to='/about'>ABOUT</S.LINK></S.LinkContainer>
                     <S.LinkContainer><S.LINK to='/works'>WORKS</S.LINK></S.LinkContainer>
                     <S.LinkContainer><S.LINK to='/onu'>ONU</S.LINK></S.LinkContainer>
                 </S.Container>
-                <S.MobileMenu onClick={()=>{setOpen(!open)}}>{open === true ? 'X' : '☰'}</S.MobileMenu>
-                {open && Mobile()}
-            </nav>
-        </>
+            </S.Navigation>
+            <S.MobileMenu onClick={()=>{setOpen(!open)}}>{open === true ? 'X' : '☰'}</S.MobileMenu>
+            {open && Mobile()}
+        </S.MomContainer>
     )
 }
 
