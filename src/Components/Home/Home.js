@@ -5,7 +5,17 @@ import Photo from '../data/main.png'
 const Home = () => {
     return(
         <S.MomContainer>
-            <h2>I'm on Home</h2>
+            <S.Heading>Hi, I'm Gabriel Alcântara!</S.Heading>
+            <S.Container>
+                <S.ListContainer>
+                    <S.List>Front-End Developer</S.List>
+                    <S.List>Writer</S.List>
+                    <S.List>Video Editor</S.List>
+                </S.ListContainer>
+                <S.ImageContainer>
+                    <img src={Photo} alt='My photo'/>
+                </S.ImageContainer>
+            </S.Container>
         </S.MomContainer>
     )
 }

@@ -19,7 +19,7 @@ export const MomContainer = styled.div`
 
 export const Heading = styled.h1`
     font-family: 'Caveat', cursive;
-    color: #F467A4;
+    color: #0b090a;
     font-size: 3vw;
     @media screen and (max-width: 1024px){
         font-size: 3.5vw;
@@ -70,7 +70,7 @@ export const LINK = styled(Link)`
     font-weight: 200;
     text-decoration: none;
     font-size: 2vw;
-    color: #5C7AFF;
+    color: #0b090a;
     width: 5vw;
     &:hover{
         cursor: pointer;
@@ -100,7 +100,7 @@ export const MobileMenu = styled.button`
         left: 2vw;
         border: none;
         background: none;
-        color: #5C7AFF;
+        color: #0b090a;
         font-size: 3vw;
     }
     @media screen and (max-width: 425px){
