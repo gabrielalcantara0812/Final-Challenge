@@ -12,7 +12,7 @@ const Header = () => {
                     <li><S.LINK to='/'>HOME</S.LINK></li>
                     <li><S.LINK to='/about'>ABOUT</S.LINK></li>
                     <li><S.LINK to='/works'>WORKS</S.LINK></li>
-                    <li><S.LINK to='/onu'>ONU</S.LINK></li>
+                    <li><S.LINK to='/onu'>ODS</S.LINK></li>
                 </S.ContainerMobile>
             </S.NavigationMobile>
         )
@@ -26,7 +26,7 @@ const Header = () => {
                     <S.LinkContainer><S.LINK to='/'>HOME</S.LINK></S.LinkContainer>
                     <S.LinkContainer><S.LINK to='/about'>ABOUT</S.LINK></S.LinkContainer>
                     <S.LinkContainer><S.LINK to='/works'>WORKS</S.LINK></S.LinkContainer>
-                    <S.LinkContainer><S.LINK to='/onu'>ONU</S.LINK></S.LinkContainer>
+                    <S.LinkContainer><S.LINK to='/onu'>ODS</S.LINK></S.LinkContainer>
                 </S.Container>
             </S.Navigation>
             <S.MobileMenu onClick={()=>{setOpen(!open)}}>{open === true ? 'X' : '☰'}</S.MobileMenu>

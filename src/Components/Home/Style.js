@@ -3,55 +3,71 @@ import styled from 'styled-components'
 export const MomContainer = styled.div`
     background: #e9ecef;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    height: 88vh;
+    justify-content: space-between;
+    height: 88.3vh;
+    overflow: hidden;
+    @media screen and (max-width: 1440px){
+        height: 88.9vh;
+    }
+    @media screen and (max-width: 1024px){
+        height: 91vh;
+    }
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        height: 93.5vh;
+    }
+    @media screen and (max-width: 425px){
+        height: 95vh;
+    }
+    @media screen and (max-width: 375px){
+        height: 95.5vh;
+    }
+    @media screen and (max-width: 320px){
+        height: 95.7vh;
+    }
+`
+
+export const Hi = styled.h2`
+    font-family: 'Ubuntu', sans-serif;
+    color: #0b090a;
+    font-size: 1.5vw;
+    font-weight: 500;
 `
 
 export const Heading = styled.h2`
     font-family: 'Caveat', cursive;
     color: #0b090a;
     font-size: 5vw;
-    mrgin-top: 1.5vw;
-`
-export const Container = styled.div`
-    height: 80%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items:center;
-    padding-left: 1vw;
-    padding-right: 1vw;
 `
 
-export const ListContainer = styled.ul`
-    height: 100%;
+export const HeadingThree = styled.h3`
+    font-family: 'Ubuntu', sans-serif;
+    color: #0b090a;
+    font-size: 1.5vw;
+    font-weight: 500;
+`
+
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-`
-export const List = styled.li`
-    font-family: 'Merriweather', serif;
-    font-size: 2vw;
-    display: flex;
     justify-content: center;
-    margin-bottom: 2.5vw;
-    width: 25vw;
-    font-weight: 300;
-    color: #5C7AFF;
-    &:hover{
-        cursor: pointer;
-        font-weight: 400;
-    }
+    width:50vw;
+    height: 100%;
 `
 
 export const ImageContainer = styled.figure`
     height: 100%;
-    width: 50%;
+    width:50vw;
     overflow: hidden;
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    border: solid #0b090a 5px;
+    box-shadow: -10px 1px 20px #0b090a;
 `
+
+export const Image = styled.img`
+    width: 100vw;
+`
+
