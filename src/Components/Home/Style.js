@@ -33,12 +33,24 @@ export const Hi = styled.h2`
     color: #0b090a;
     font-size: 1.5vw;
     font-weight: 500;
+    @media screen and (max-width: 1024px){
+        font-size: 2.5vw;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 3vw;
+    }
 `
 
 export const Heading = styled.h2`
     font-family: 'Caveat', cursive;
     color: #0b090a;
     font-size: 5vw;
+    @media screen and (max-width: 1024px){
+        font-size: 5.5vw;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 8vw;
+    }
 `
 
 export const HeadingThree = styled.h3`
@@ -46,6 +58,12 @@ export const HeadingThree = styled.h3`
     color: #0b090a;
     font-size: 1.5vw;
     font-weight: 500;
+    @media screen and (max-width: 1024px){
+        font-size: 2.5vw;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 3vw;
+    }
 `
 
 export const Container = styled.div`
@@ -55,6 +73,9 @@ export const Container = styled.div`
     justify-content: center;
     width:50vw;
     height: 100%;
+    @media screen and (max-width: 768px){
+        width: 100vw;
+    }
 `
 
 export const ImageContainer = styled.figure`
@@ -65,6 +86,9 @@ export const ImageContainer = styled.figure`
     justify-content: center;
     align-items: center;
     box-shadow: -10px 1px 20px #0b090a;
+    @media screen and (max-width: 768px){
+        width: 100vw;
+    }
 `
 
 export const Image = styled.img`
