@@ -39,6 +39,12 @@ export const Hi = styled.h2`
     @media screen and (max-width: 768px){
         font-size: 3vw;
     }
+    @media screen and (max-width: 425px){
+        font-size: 4.5vw;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 5.5vw;
+    }
 `
 
 export const Heading = styled.h2`
@@ -50,6 +56,12 @@ export const Heading = styled.h2`
     }
     @media screen and (max-width: 768px){
         font-size: 8vw;
+    }
+    @media screen and (max-width: 425px){
+        font-size: 12vw;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 12.5vw;
     }
 `
 
@@ -63,6 +75,12 @@ export const HeadingThree = styled.h3`
     }
     @media screen and (max-width: 768px){
         font-size: 3vw;
+    }
+    @media screen and (max-width: 425px){
+        font-size: 4.5vw;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 5.5vw;
     }
 `
 
@@ -93,5 +111,14 @@ export const ImageContainer = styled.figure`
 
 export const Image = styled.img`
     width: 100vw;
+    @media screen and (max-width: 425px){
+        width: 125vw;
+    }
+    @media screen and (max-width: 375px){
+        width: 140vw;
+    }
+    @media screen and (max-width: 320px){
+        width: 165vw;
+    }
 `
 
