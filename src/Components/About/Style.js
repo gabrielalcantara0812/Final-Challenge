@@ -5,6 +5,7 @@ export const MomContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     height: 88.3vh;
     overflow: hidden;
     @media screen and (max-width: 1440px){
@@ -31,6 +32,15 @@ export const Heading = styled.h2`
     font-family: 'Caveat', cursive;
     color: #0b090a;
     font-size: 4.5vw;
+    @media screen and (max-width: 1024px){
+        font-size: 5vw;
+    }
+    @media screen and (max-width: 768px){
+        font-size: 8vw;
+    }
+    @media screen and (max-width: 425px){
+        font-size: 12vw;
+    }
 `
 
 export const Container = styled.div`
@@ -38,8 +48,12 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-evenly;
     height: 80%;
-    width: 90%;
+    width: 100%;
     padding: 1vw;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        height: 90%;
+    }
 `
 
 export const ImageContainer = styled.figure`
@@ -49,6 +63,20 @@ export const ImageContainer = styled.figure`
     justify-content: center;
     align-items: center;
     box-shadow: 9px 10px 20px #0b090a;
+    @media screen and (max-width: 1024px){
+        height: 500px;
+        width: 30vw;
+    }
+    @media screen and (max-width: 768px){
+        height: 350px;
+        width: 40vw;
+    }
+`
+
+export const Image = styled.img`
+    @media screen and (max-width: 1024px){
+        width: 40vw;
+    }
 `
 
 export const MiniContainer = styled.div`
@@ -57,9 +85,55 @@ export const MiniContainer = styled.div`
     justify-content: space-between;
     width: 50vw;
     height: 80%;
+    @media screen and (max-width: 768px){
+        justify-content: space-evenly;
+        width: 80vw;
+        align-items: center;
+    }
 `
 
 export const Paragraph = styled.p`
     font-size: 1.5vw;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify;
+    line-height: 1.5;
+    text-indent: 2vw;
     width: 50vw;
+    @media screen and (max-width: 1024px){
+        font-size: 2vw;
+        text-indent: 2.5vw;
+    }
+    @media screen and (max-width: 768px){
+        width: 80vw;
+        font-size: 2.5vw;
+        text-indent: 3vw;
+    }
+    @media screen and (max-width: 425px){
+        font-size: 3.5vw;
+    }
+`
+
+export const Button = styled.button`
+    background: #e9ecef;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
+    border: none;
+    box-shadow: 9px 10px 20px #0b090a;
+    width: 20vw;
+    height: 50px;
+    &:hover{
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1024px){
+        width: 25vw;
+        font-size: 1.5vw;
+    }
+    @media screen and (max-width: 768px){
+        width: 30vw;
+        font-size: 2vw;
+    }
+    @media screen and (max-width: 425px){
+        width: 40vw;
+        font-size: 3.5vw;
+    }
 `
