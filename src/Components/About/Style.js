@@ -71,11 +71,24 @@ export const ImageContainer = styled.figure`
         height: 350px;
         width: 40vw;
     }
+    @media screen and (max-width: 375px){
+        width: 42vw;
+    }
+    @media screen and (max-width: 320px){
+        width: 45vw;
+        height: 300px;
+    }
 `
 
 export const Image = styled.img`
     @media screen and (max-width: 1024px){
         width: 40vw;
+    }
+    @media screen and (max-width: 375px){
+        width: 43vw;
+    }
+    @media screen and (max-width: 320px){
+        width: 46vw;
     }
 `
 
@@ -111,6 +124,12 @@ export const Paragraph = styled.p`
     @media screen and (max-width: 425px){
         font-size: 3.5vw;
     }
+    @media screen and (max-width: 375px){
+        font-size: 4vw;
+    }
+    @media screen and (max-width: 320px){
+        font-size: 4.5vw;
+    }
 `
 
 export const Button = styled.button`
@@ -135,5 +154,13 @@ export const Button = styled.button`
     @media screen and (max-width: 425px){
         width: 40vw;
         font-size: 3.5vw;
+    }
+    @media screen and (max-width: 375px){
+        width: 45vw;
+        font-size: 4vw;
+    }
+    @media screen and (max-width: 320px){
+        width: 49vw;
+        font-size: 5vw;
     }
 `
