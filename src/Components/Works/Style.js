@@ -31,7 +31,7 @@ export const MomContainer = styled.div`
 export const Heading = styled.h2`
     font-family: 'Caveat', cursive;
     color: #0b090a;
-    font-size: 4.5vw;
+    font-size: 3.5vw;
 `
 
 export const Container = styled.div`
@@ -44,6 +44,7 @@ export const Container = styled.div`
 
 export const BoxContainer = styled.div`
     width: 25vw;
+    position: relative;
 `
 
 export const ImageContainer = styled.figure`
@@ -55,6 +56,72 @@ export const ImageContainer = styled.figure`
     box-shadow: 10px 8px 20px #0b090a;
 `
 
+export const InfoContainer = styled.div`
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    top: 30vh;
+`
+
+export const InfoButton = styled.button`
+    background: #e9ecef;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 0.9vw;
+    border: none;
+    box-shadow: 9px 10px 20px #0b090a;
+    width: 7vw;
+    height: 20px;
+`
+
+export const InfoBox = styled.div`
+    transition: 2;
+    width: 100%;
+    display: flex;
+    text-align: justify;
+    height: 34vh;
+    background: #0b090a;
+    position: absolute;
+    top: 0;
+`
+
+export const Paragraph = styled.p`
+    color: #e9ecef;
+`
+
 export const Image = styled.img`
     width: 27vw;
+`
+
+export const Button = styled.button`
+    background: #e9ecef;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1vw;
+    border: none;
+    box-shadow: 9px 10px 20px #0b090a;
+    width: 20vw;
+    height: 35px;
+    &:hover{
+        cursor: pointer;
+    }
+    @media screen and (max-width: 1024px){
+        width: 25vw;
+        font-size: 1.5vw;
+    }
+    @media screen and (max-width: 768px){
+        width: 30vw;
+        font-size: 2vw;
+    }
+    @media screen and (max-width: 425px){
+        width: 40vw;
+        font-size: 3.5vw;
+    }
+    @media screen and (max-width: 375px){
+        width: 45vw;
+        font-size: 4vw;
+    }
+    @media screen and (max-width: 320px){
+        width: 49vw;
+        font-size: 5vw;
+    }
 `
