@@ -89,7 +89,7 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:50vw;
+    width:50%;
     height: 100%;
     @media screen and (max-width: 768px){
         width: 100vw;
@@ -98,7 +98,7 @@ export const Container = styled.div`
 
 export const ImageContainer = styled.figure`
     height: 100%;
-    width:50vw;
+    width:50%;
     overflow: hidden;
     display:flex;
     justify-content: center;

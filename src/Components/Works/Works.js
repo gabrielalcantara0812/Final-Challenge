@@ -24,6 +24,22 @@ const Works = () => {
         )
     }
 
+    const InfoEve = () => {
+        return(
+            <S.InfoBox>
+                <S.Paragraph>{language === true ? 'Esse foi uma atividade de inglês em que deveríamos construir uma página baseada em um filme ou uma série. Havíamos acabado de ser introduzidos ao flex-box e tudo foi bem experimental, tive muitos problemas com a responsividade. Mas no fim, tenho orgulho do meu primeiro projeto individual.' : 'This was a english activity that we had to build a page based on a movie or TV series. We had just learned the basics of flex-box and everything on this one was experimental, I had a lot of issues with the responsive design. But in the end, I’m proud of my first individual project.'}</S.Paragraph >
+            </S.InfoBox>
+        )
+    }
+
+    const InfoFinn = () => {
+        return(
+            <S.InfoBox>
+                <S.Paragraph>{language === true ? 'Assim como o Recipes, esse projeto foi antes do desafio final, mas no Módulo 1. Essa atividade foi focada em position, não foi tão difícil quanto eu esperava, só que o design é mais estático aqui. Apesar de não estar responsivo, foi a partir daqui que comecei a usar esse recurso de maneira mais eficaz.' : 'Like the Recipes, this project came before the final project, but in the first module. This activity was focused on position, it wasn’t too hard like I expected, but the design is static. Although it isn’t responsive, it was since this one that I started using position in a more useful way.'}</S.Paragraph >
+            </S.InfoBox>
+        )
+    }
+
     return(
         <S.MomContainer>
             <S.Heading>Works</S.Heading>
@@ -42,7 +58,7 @@ const Works = () => {
                     <S.ImageContainer>
                         <S.Image src={KillingEve} alt='KillingEve'/>
                     </S.ImageContainer>
-                    {eve && InfoRecipes()}
+                    {eve && InfoEve()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setEve(!eve)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
                         <S.InfoButton>{language === true ? 'Abrir' : 'Open' }</S.InfoButton>
@@ -52,7 +68,7 @@ const Works = () => {
                     <S.ImageContainer>
                         <S.Image src={Finn} alt='Finn'/>
                     </S.ImageContainer>
-                    {finn && InfoRecipes()}
+                    {finn && InfoFinn()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setFinn(!finn)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
                         <S.InfoButton>{language === true ? 'Abrir' : 'Open' }</S.InfoButton>

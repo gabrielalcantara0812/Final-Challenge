@@ -6,7 +6,7 @@ export const MomContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 1vw;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     @media screen and (max-width: 768px){
         flex-direction: row-reverse;

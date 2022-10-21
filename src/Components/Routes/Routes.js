@@ -13,6 +13,7 @@ const R = () => {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/works' element={<Works/>}/>
+                <Route path='/contacts' />
             </Routes>
         </Router>
     )

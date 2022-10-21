@@ -96,7 +96,7 @@ export const MiniContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 50vw;
+    width: 50%;
     height: 80%;
     @media screen and (max-width: 768px){
         justify-content: space-evenly;
