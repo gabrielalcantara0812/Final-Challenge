@@ -4,6 +4,7 @@ import Header from '../Header/Header'
 import Home from '../Home/Home'
 import About from '../About/About'
 import Works from '../Works/Works'
+import Contacts from '../Contacts/Contacts'
 
 const R = () => {
     return(
@@ -13,7 +14,7 @@ const R = () => {
                 <Route path='/' element={<Home/>}/>
                 <Route path='/about' element={<About/>}/>
                 <Route path='/works' element={<Works/>}/>
-                <Route path='/contacts' />
+                <Route path='/contacts' element={<Contacts/>} />
             </Routes>
         </Router>
     )
