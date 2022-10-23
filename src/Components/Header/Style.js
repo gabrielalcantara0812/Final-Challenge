@@ -8,6 +8,7 @@ export const MomContainer = styled.div`
     padding: 1vw;
     width: 100%;
     overflow: hidden;
+    position: relative;
     @media screen and (max-width: 768px){
         flex-direction: row-reverse;
         justify-content: center;

@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import * as S from './Style'
 import Recipes from '../data/recipes.png'
 import KillingEve from '../data/killing-eve.png'
-import Finn from '../data/finn-color.png'
+import Finn from '../data/portflow.png'
+import ODS from '../data/ods.png'
 
 const Works = () => {
 
@@ -51,7 +52,7 @@ const Works = () => {
                     {recipes && InfoRecipes()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setRecipes(!recipes)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
-                        <S.InfoButton>{language === true ? 'Abrir' : 'Open' }</S.InfoButton>
+                        <S.InfoButton><S.A href='https://recipes-six-red.vercel.app/' target='_blank'>{language === true ? 'Abrir' : 'Open'}</S.A></S.InfoButton>
                     </S.InfoContainer>
                 </S.BoxContainer>
                 <S.BoxContainer>
@@ -61,7 +62,7 @@ const Works = () => {
                     {eve && InfoEve()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setEve(!eve)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
-                        <S.InfoButton>{language === true ? 'Abrir' : 'Open' }</S.InfoButton>
+                        <S.InfoButton><S.A href='https://codepen.io/gabrielalcantara1823/pen/xxpMoyE' target='_blank'>{language === true ? 'Abrir' : 'Open'}</S.A></S.InfoButton>
                     </S.InfoContainer>
                 </S.BoxContainer>
                 <S.BoxContainer>
@@ -71,17 +72,17 @@ const Works = () => {
                     {finn && InfoFinn()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setFinn(!finn)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
-                        <S.InfoButton>{language === true ? 'Abrir' : 'Open' }</S.InfoButton>
+                        <S.InfoButton ><S.A href='https://portflow-blond.vercel.app/' target='_blank'>{language === true ? 'Abrir' : 'Open'}</S.A></S.InfoButton>
                     </S.InfoContainer>
                 </S.BoxContainer>
                 <S.BoxContainer>
                     <S.ImageContainer>
-                        <S.Image src={Recipes} alt='Recipes'/>
+                        <S.Image src={ODS} alt='ODS'/>
                     </S.ImageContainer>
                     {port && InfoRecipes()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setPort(!port)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
-                        <S.InfoButton>{language === true ? 'Abrir' : 'Open' }</S.InfoButton>
+                        <S.InfoButton><S.A href='https://ods-pied.vercel.app/' target='_blank'>{language === true ? 'Abrir' : 'Open'}</S.A></S.InfoButton>
                     </S.InfoContainer>
                 </S.BoxContainer>
             </S.Container>
