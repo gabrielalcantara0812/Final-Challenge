@@ -36,7 +36,15 @@ const Works = () => {
     const InfoFinn = () => {
         return(
             <S.InfoBox>
-                <S.Paragraph>{language === true ? 'Assim como o Recipes, esse projeto foi antes do desafio final, mas no Módulo 1. Essa atividade foi focada em position, não foi tão difícil quanto eu esperava, só que o design é mais estático aqui. Apesar de não estar responsivo, foi a partir daqui que comecei a usar esse recurso de maneira mais eficaz.' : 'Like the Recipes, this project came before the final project, but in the first module. This activity was focused on position, it wasn’t too hard like I expected, but the design is static. Although it isn’t responsive, it was since this one that I started using position in a more useful way.'}</S.Paragraph >
+                <S.Paragraph>{language === true ? 'Porflow foi o projeto final do Módulo 1. Ele é o modelo mais simples das opções que tínhamos que escolher, com ele aprendi sobre a progressão de um projeto, já que me organizei para fazê-lo em 2 semanas.' : 'Portflow was the final project of the first module. It is the most simple model of the options that we had to choose, with it I learned about the progression of a project, because I had to organized it in some weeks.'}</S.Paragraph >
+            </S.InfoBox>
+        )
+    }
+
+    const InfoODS = () => {
+        return(
+            <S.InfoBox>
+                <S.Paragraph>{language === true ? ' A página da ODS foi um desafio adicional para o desafio final do Módulo 2. Foi uma página interessante de construir, explorei algumas funcionalidades do React que ainda não havia usado.' : 'The ODS page was an additional challenge for the final project of the second module. It was an interesting page to build, I explored some React’s functionalities that I didn’t use before.'}</S.Paragraph >
             </S.InfoBox>
         )
     }
@@ -79,7 +87,7 @@ const Works = () => {
                     <S.ImageContainer>
                         <S.Image src={ODS} alt='ODS'/>
                     </S.ImageContainer>
-                    {port && InfoRecipes()}
+                    {port && InfoODS()}
                     <S.InfoContainer>
                         <S.InfoButton onClick={()=>{setPort(!port)}}>{language === true ? 'Sobre' : 'About'}</S.InfoButton>
                         <S.InfoButton><S.A href='https://ods-pied.vercel.app/' target='_blank'>{language === true ? 'Abrir' : 'Open'}</S.A></S.InfoButton>

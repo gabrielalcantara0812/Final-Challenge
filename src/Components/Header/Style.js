@@ -37,7 +37,7 @@ export const Heading = styled.h1`
     }
 `
 export const Navigation = styled.nav`
-    width: 80%:
+    width: 100%:
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,6 +56,7 @@ export const Container = styled.ul`
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
+    padding-right: 1vw;
     @media screen and (max-width: 768px){
         display: none;
     }
@@ -96,7 +97,7 @@ export const MobileMenu = styled.button`
     display: none;
     @media screen and (max-width: 768px){
         display: initial;
-        z-index: 1;
+        z-index: 2;
         width: 2vw;
         position: absolute;
         left: 2vw;
@@ -115,6 +116,7 @@ export const NavigationMobile = styled.nav`
     @media screen and (max-width: 768px){
         display: initial;
         position: absolute;
+        z-index: 1;
         width: 20vw;
         height: 50vh;
         left: 0;
